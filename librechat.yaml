@@ -5,7 +5,7 @@ endpoints:
   custom:
     - name: "Codefast"
       apiKey: "user_provided"
-      baseURL: "https://librechat-api.foreverplayerstudios.workers.dev/v1"  # Gerçek base URL'nizi girin
+      baseURL: "https://api13.codefast.app/v1"  # Gerçek base URL'nizi girin
       models:
         default: [
               "gemini-2.5-pro",
