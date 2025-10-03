@@ -1,0 +1,16 @@
+version: 1.2.8
+cache: true
+endpoints:
+  custom:
+  - name: "Codefast"
+    apiKey: "${CODEFAST_API_KEY}"
+    baseURL: "https://librechat-api.foreverplayerstudios.workers.dev/v1"  # Gerçek base URL'nizi girin
+    models:
+      default: ["gpt-3.5-turbo"]  # Fallback modeller (çekme başarısız olursa)
+    fetch: true  # Bu, /v1/models endpoint'inden modelleri otomatik çeker
+    titleConvo: true
+    titleModel: "current_model"
+    summarize: false
+    summaryModel: "current_model"
+    forcePrompt: false
+    modelDisplayLabel: "Codefast"
