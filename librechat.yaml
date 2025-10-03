@@ -1,130 +1,137 @@
 version: 1.2.8
 cache: true
+
 endpoints:
   custom:
-  - name: "Codefast"
-    apiKey: "${CODEFAST_API_KEY}"
-    baseURL: "https://librechat-api.foreverplayerstudios.workers.dev/v1"  # Gerçek base URL'nizi girin
-    models:
-      default: [ "qwen3-max-preview",
-  "gpt-5-chat",
-  "claude-opus-4-20250514",
-  "gemini-2.5-pro",
-  "gpt-5-high",
-  "o3-2025-04-16",
-  "gemini-2.5-flash",
-  "chatgpt-4o-latest-20250326",
-  "gemini-2.0-flash-001",
-  "claude-3-5-sonnet-20241022",
-  "llama-4-scout-17b-16e-instruct",
-  "phantom-0908-1",
-  "llama-4-maverick-03-26-experimental",
-  "gpt-4.1-2025-04-14",
-  "qwq-32b",
-  "mistral-small-3.1-24b-instruct-2503",
-  "gemma-3-27b-it",
-  "x1-1-preview-0915",
-  "command-a-03-2025",
-  "gpt-4.1-mini-2025-04-14",
-  "amazon.nova-pro-v1:0",
-  "o3-mini",
-  "grok-3-mini-beta",
-  "kimi-k2-0905-preview",
-  "o4-mini-2025-04-16",
-  "gemini-2.5-flash-lite-preview-06-17-thinking",
-  "amazon-nova-experimental-chat-05-14",
-  "claude-3-7-sonnet-20250219-thinking-32k",
-  "claude-3-5-haiku-20241022",
-  "mistral-medium-2505",
-  "deepseek-v3-0324",
-  "magistral-medium-2506",
-  "EB45-turbo-vl-0906",
-  "claude-sonnet-4-20250514",
-  "llama-4-maverick-17b-128e-instruct",
-  "qwen3-30b-a3b",
-  "stephen-v2",
-  "qwen3-235b-a22b",
-  "llama-3.3-70b-instruct",
-  "x1-turbo-0906",
-  "qwen3-30b-a3b-instruct-2507",
-  "claude-3-7-sonnet-20250219",
-  "minimax-m1",
-  "claude-sonnet-4-20250514-thinking-32k",
-  "qwen3-235b-a22b-no-thinking",
-  "claude-opus-4-20250514-thinking-16k",
-  "stephen-vision-csfix",
-  "mistral-small-2506",
-  "grok-3-mini-high",
-  "grok-4-fast-search",
-  "gemini-2.5-pro-grounding",
-  "ppl-sonar-pro-high",
-  "ppl-sonar-reasoning-pro-high",
-  "claude-opus-4-search",
-  "grok-4-0709",
-  "glm-4.5",
-  "o3-search",
-  "kimi-k2-0711-preview",
-  "gpt-oss-20b",
-  "claude-opus-4-1-20250805",
-  "gemini-2.5-pro-grounding-exp",
-  "qwen-vl-max-2025-08-13",
-  "gpt-oss-120b",
-  "qwen3-235b-a22b-instruct-2507",
-  "step-3",
-  "nightride-on",
-  "EB45-vision",
-  "nightride-on-v2",
-  "qwen3-coder-480b-a35b-instruct",
-  "grok-4-search",
-  "qwen3-235b-a22b-thinking-2507",
-  "glm-4.5-air",
-  "phantom-0908-2",
-  "mistral-medium-2508",
-  "diffbot-small-xl",
-  "lmarena-internal-test-only",
-  "not-a-new-model",
-  "anonymous-915",
-  "gpt-5-mini-high",
-  "claude-opus-4-1-20250805-thinking-16k",
-  "EB45-turbo",
-  "glm-4.5v",
-  "gpt-5-nano-high",
-  "claude-opus-4-1-search",
-  "redwood",
-  "sorting-hat",
-  "gpt-5-search",
-  "gpt-5-high-new-system-prompt",
-  "leepwal",
-  "route66",
-  "mai-1-preview",
-  "Ring-flash-2.0",
-  "Ling-flash-2.0",
-  "deepseek-v3.1-terminus",
-  "deepseek-v3.1-terminus-thinking",
-  "grok-4-fast",
-  "anonymous-925",
-  "qwen3-next-80b-a3b-instruct",
-  "qwen3-next-80b-a3b-thinking",
-  "longcat-flash-chat",
-  "raptor"]  # Fallback modeller (çekme başarısız olursa)
-    fetch: true  # Bu, /v1/models endpoint'inden modelleri otomatik çeker
-    titleConvo: true
-    titleModel: "current_model"
-    summarize: false
-    summaryModel: "current_model"
-    forcePrompt: false
-    modelDisplayLabel: "Codefast"
-    # librechat.yaml (sadece yeni blok)
+    - name: "Codefast"
+      apiKey: "${CODEFAST_API_KEY}"
+      baseURL: "https://librechat-api.foreverplayerstudios.workers.dev/v1"  # Gerçek base URL'nizi girin
+      models:
+        default: [
+          "qwen3-max-preview",
+          "gpt-5-chat",
+          "claude-opus-4-20250514",
+          "gemini-2.5-pro",
+          "gpt-5-high",
+          "o3-2025-04-16",
+          "gemini-2.5-flash",
+          "chatgpt-4o-latest-20250326",
+          "gemini-2.0-flash-001",
+          "claude-3-5-sonnet-20241022",
+          "llama-4-scout-17b-16e-instruct",
+          "phantom-0908-1",
+          "llama-4-maverick-03-26-experimental",
+          "gpt-4.1-2025-04-14",
+          "qwq-32b",
+          "mistral-small-3.1-24b-instruct-2503",
+          "gemma-3-27b-it",
+          "x1-1-preview-0915",
+          "command-a-03-2025",
+          "gpt-4.1-mini-2025-04-14",
+          "amazon.nova-pro-v1:0",
+          "o3-mini",
+          "grok-3-mini-beta",
+          "kimi-k2-0905-preview",
+          "o4-mini-2025-04-16",
+          "gemini-2.5-flash-lite-preview-06-17-thinking",
+          "amazon-nova-experimental-chat-05-14",
+          "claude-3-7-sonnet-20250219-thinking-32k",
+          "claude-3-5-haiku-20241022",
+          "mistral-medium-2505",
+          "deepseek-v3-0324",
+          "magistral-medium-2506",
+          "EB45-turbo-vl-0906",
+          "claude-sonnet-4-20250514",
+          "llama-4-maverick-17b-128e-instruct",
+          "qwen3-30b-a3b",
+          "stephen-v2",
+          "qwen3-235b-a22b",
+          "llama-3.3-70b-instruct",
+          "x1-turbo-0906",
+          "qwen3-30b-a3b-instruct-2507",
+          "claude-3-7-sonnet-20250219",
+          "minimax-m1",
+          "claude-sonnet-4-20250514-thinking-32k",
+          "qwen3-235b-a22b-no-thinking",
+          "claude-opus-4-20250514-thinking-16k",
+          "stephen-vision-csfix",
+          "mistral-small-2506",
+          "grok-3-mini-high",
+          "grok-4-fast-search",
+          "gemini-2.5-pro-grounding",
+          "ppl-sonar-pro-high",
+          "ppl-sonar-reasoning-pro-high",
+          "claude-opus-4-search",
+          "grok-4-0709",
+          "glm-4.5",
+          "o3-search",
+          "kimi-k2-0711-preview",
+          "gpt-oss-20b",
+          "claude-opus-4-1-20250805",
+          "gemini-2.5-pro-grounding-exp",
+          "qwen-vl-max-2025-08-13",
+          "gpt-oss-120b",
+          "qwen3-235b-a22b-instruct-2507",
+          "step-3",
+          "nightride-on",
+          "EB45-vision",
+          "nightride-on-v2",
+          "qwen3-coder-480b-a35b-instruct",
+          "grok-4-search",
+          "qwen3-235b-a22b-thinking-2507",
+          "glm-4.5-air",
+          "phantom-0908-2",
+          "mistral-medium-2508",
+          "diffbot-small-xl",
+          "lmarena-internal-test-only",
+          "not-a-new-model",
+          "anonymous-915",
+          "gpt-5-mini-high",
+          "claude-opus-4-1-20250805-thinking-16k",
+          "EB45-turbo",
+          "glm-4.5v",
+          "gpt-5-nano-high",
+          "claude-opus-4-1-search",
+          "redwood",
+          "sorting-hat",
+          "gpt-5-search",
+          "gpt-5-high-new-system-prompt",
+          "leepwal",
+          "route66",
+          "mai-1-preview",
+          "Ring-flash-2.0",
+          "Ling-flash-2.0",
+          "deepseek-v3.1-terminus",
+          "deepseek-v3.1-terminus-thinking",
+          "grok-4-fast",
+          "anonymous-925",
+          "qwen3-next-80b-a3b-instruct",
+          "qwen3-next-80b-a3b-thinking",
+          "longcat-flash-chat",
+          "raptor"
+        ] # Fallback modeller (çekme başarısız olursa)
+      fetch: true                  # /v1/models endpoint'inden modelleri otomatik çeker
+      titleConvo: true
+      titleModel: "current_model"
+      summarize: false
+      summaryModel: "current_model"
+      forcePrompt: false
+      modelDisplayLabel: "Codefast"
+
+# ——— UI / Interface ayarları ———
 interface:
   # Sağdaki yan paneli tamamen kapat
-  sidePanel: false                 # → istemler, memories vb. gözükmez
-  # Arayüzde araçlar:
-  webSearch: true                  # → kalsın
-  fileSearch: false                # → "dosya arama" kapalı
-  runCode: false                   # → "kod yorumlayıcı / Run Code" butonu kapalı
-  # Diğer isteklerin:
-  agents: false                    # → Agent Marketplace ve Agent arayüzü kapalı
-  bookmarks: false                 # → Yer imleri kapalı
-  prompts: false                   # → Prompt yönetimi kapalı
-  # İsteğe bağlı: dosya alıntıları da gizlensin (file search zaten kapalı)
+  sidePanel: false                 # istemler, memories vb. gözükmez
+
+  # Araçlar
+  webSearch: true                  # kalsın
+  fileSearch: false                # dosya arama kapalı
+  runCode: false                   # kod yorumlayıcı kapalı
+
+  # Diğer isteklerin
+  agents: false                    # Agent Marketplace kapalı
+  bookmarks: false                 # Yer imleri kapalı
+  prompts: false                   # Prompt yöneticisi kapalı
+
+  # İsteğe bağlı: file search zaten kapalıyken alıntıları da gizle
   fileCitations: false
