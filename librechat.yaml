@@ -4,7 +4,7 @@ endpoints:
   custom:
   - name: "Codefast"
     apiKey: "${CODEFAST_API_KEY}"
-    baseURL: "https://librechat-api.foreverplayerstudios.workers.dev/v1"
+    baseURL: "https://librechat-api.foreverplayerstudios.workers.dev/v1"  # Gerçek base URL'nizi girin
     models:
       default: [ "qwen3-max-preview",
   "gpt-5-chat",
@@ -106,26 +106,25 @@ endpoints:
   "qwen3-next-80b-a3b-instruct",
   "qwen3-next-80b-a3b-thinking",
   "longcat-flash-chat",
-  "raptor"]
-    fetch: true
+  "raptor"]  # Fallback modeller (çekme başarısız olursa)
+    fetch: true  # Bu, /v1/models endpoint'inden modelleri otomatik çeker
     titleConvo: true
     titleModel: "current_model"
     summarize: false
     summaryModel: "current_model"
     forcePrompt: false
     modelDisplayLabel: "Codefast"
+    # librechat.yaml (sadece yeni blok)
 interface:
-  sidePanel: false
-  prompts: false
-  bookmarks: false
-  multiConvo: false
-  agents: false
-  marketplace:
-    use: false
-  runCode: false
-  webSearch: true
-  fileSearch: false
+  # Sağdaki yan paneli tamamen kapat
+  sidePanel: false                 # → istemler, memories vb. gözükmez
+  # Arayüzde araçlar:
+  webSearch: true                  # → kalsın
+  fileSearch: false                # → "dosya arama" kapalı
+  runCode: false                   # → "kod yorumlayıcı / Run Code" butonu kapalı
+  # Diğer isteklerin:
+  agents: false                    # → Agent Marketplace ve Agent arayüzü kapalı
+  bookmarks: false                 # → Yer imleri kapalı
+  prompts: false                   # → Prompt yönetimi kapalı
+  # İsteğe bağlı: dosya alıntıları da gizlensin (file search zaten kapalı)
   fileCitations: false
-agents:
-  disableBuilder: true
-  capabilities: ["actions", "tools", "context", "ocr", "chain", "web_search"]
