@@ -4,7 +4,7 @@ endpoints:
   custom:
   - name: "Codefast"
     apiKey: "${CODEFAST_API_KEY}"
-    baseURL: "https://librechat-api.foreverplayerstudios.workers.dev/v1"  # Gerçek base URL'nizi girin
+    baseURL: "https://librechat-api.foreverplayerstudios.workers.dev/v1"
     models:
       default: [ "qwen3-max-preview",
   "gpt-5-chat",
@@ -106,11 +106,26 @@ endpoints:
   "qwen3-next-80b-a3b-instruct",
   "qwen3-next-80b-a3b-thinking",
   "longcat-flash-chat",
-  "raptor"]  # Fallback modeller (çekme başarısız olursa)
-    fetch: true  # Bu, /v1/models endpoint'inden modelleri otomatik çeker
+  "raptor"]
+    fetch: true
     titleConvo: true
     titleModel: "current_model"
     summarize: false
     summaryModel: "current_model"
     forcePrompt: false
     modelDisplayLabel: "Codefast"
+interface:
+  sidePanel: false
+  prompts: false
+  bookmarks: false
+  multiConvo: false
+  agents: false
+  marketplace:
+    use: false
+  runCode: false
+  webSearch: true
+  fileSearch: false
+  fileCitations: false
+agents:
+  disableBuilder: true
+  capabilities: ["actions", "tools", "context", "ocr", "chain", "web_search"]
