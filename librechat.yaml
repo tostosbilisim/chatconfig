@@ -118,7 +118,7 @@ endpoints:
     "claude-opus-4-search",
     "claude-opus-4-1-search"
         ] # Fallback modeller (çekme başarısız olursa)
-      fetch: true                  # /v1/models endpoint'inden modelleri otomatik çeker
+      fetch: false                  # /v1/models endpoint'inden modelleri otomatik çeker
       titleConvo: true
       titleModel: "current_model"
       summarize: false
