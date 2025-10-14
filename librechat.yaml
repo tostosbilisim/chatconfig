@@ -138,6 +138,24 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false
       modelDisplayLabel: "Codefast"
+    - name: "Codefast Grok"
+      apiKey: "user_provided"
+      baseURL: "https://api12.codefast.app/v1"
+      models:
+        default: [
+          "grok-3-fast",
+          "grok-4-fast",
+          "grok-4-fast-expert",
+          "grok-4-expert",
+          "grok-4-heavy"
+        ] # Fallback modeller (çekme başarısız olursa)
+      fetch: false                  # /v1/models endpoint'inden modelleri otomatik çeker
+      titleConvo: true
+      titleModel: "current_model"
+      summarize: false
+      summaryModel: "current_model"
+      forcePrompt: false
+      modelDisplayLabel: "Codefast Grok"
 
 # ——— UI / Interface ayarları ———
 interface:
