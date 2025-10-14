@@ -146,8 +146,7 @@ endpoints:
           "grok-3-fast",
           "grok-4-fast",
           "grok-4-fast-expert",
-          "grok-4-expert",
-          "grok-4-heavy"
+          "grok-4-expert"
         ] # Fallback modeller (çekme başarısız olursa)
       fetch: false                  # /v1/models endpoint'inden modelleri otomatik çeker
       titleConvo: true
