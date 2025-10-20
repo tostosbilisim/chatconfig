@@ -171,7 +171,9 @@ endpoints:
 "claude-opus-4-search",
 "claude-opus-4-1-search",
 "ppl-sonar-reasoning-pro-high",
-"diffbot-small-xl"
+"diffbot-small-xl",
+"orionmist",
+"lithiumflow"
         ] # Fallback modeller (çekme başarısız olursa)
       fetch: false                  # /v1/models endpoint'inden modelleri otomatik çeker
       titleConvo: true
