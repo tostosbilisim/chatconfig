@@ -197,7 +197,7 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false
       modelDisplayLabel: "Codefast Grok"
-      - name: "Codefast Gemini"
+    - name: "Codefast Gemini"
       apiKey: "user_provided"
       baseURL: "https://api13.codefast.app/v1"
       models:
