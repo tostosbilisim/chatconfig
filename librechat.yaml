@@ -200,6 +200,14 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Codefast Grok"
 
+modelSpecs:  # Bunu ekle, hepsi bu!
+  enforce: true
+  list:
+    - name: "orionmist"
+      label: "Gemini 3.0 Flash ?"  # Ekranda bu görünür, ID gizli
+    - name: "lithiumflow"
+      label: "Gemini 3.0 Pro ?"  # Bu da gizli ID, custom isim
+
 # ——— UI / Interface ayarları ———
 interface:
   # Sağdaki yan paneli tamamen kapat
