@@ -171,18 +171,15 @@ endpoints:
 "claude-opus-4-search",
 "claude-opus-4-1-search",
 "ppl-sonar-reasoning-pro-high",
-"diffbot-small-xl",
-"orionmist",
-"lithiumflow"
+"diffbot-small-xl"
         ] # Fallback modeller (çekme başarısız olursa)
-      fetch: false
+      fetch: false                  # /v1/models endpoint'inden modelleri otomatik çeker
       titleConvo: true
       titleModel: "current_model"
       summarize: false
       summaryModel: "current_model"
       forcePrompt: false
       modelDisplayLabel: "Codefast"
-
     - name: "Codefast Grok"
       apiKey: "user_provided"
       baseURL: "https://api12.codefast.app/v1"
@@ -192,8 +189,8 @@ endpoints:
           "grok-4-fast",
           "grok-4-fast-expert",
           "grok-4-expert"
-        ]
-      fetch: false
+        ] # Fallback modeller (çekme başarısız olursa)
+      fetch: false                  # /v1/models endpoint'inden modelleri otomatik çeker
       titleConvo: true
       titleModel: "current_model"
       summarize: false
@@ -203,31 +200,18 @@ endpoints:
 
 # ——— UI / Interface ayarları ———
 interface:
-  sidePanel: false
-  webSearch: true
-  fileSearch: false
-  runCode: false
-  agents: false
-  bookmarks: false
-  prompts: false
+  # Sağdaki yan paneli tamamen kapat
+  sidePanel: false                 # istemler, memories vb. gözükmez
+
+  # Araçlar
+  webSearch: true                  # kalsın
+  fileSearch: false                # dosya arama kapalı
+  runCode: false                   # kod yorumlayıcı kapalı
+
+  # Diğer isteklerin
+  agents: false                    # Agent Marketplace kapalı
+  bookmarks: false                 # Yer imleri kapalı
+  prompts: false                   # Prompt yöneticisi kapalı
+
+  # İsteğe bağlı: file search zaten kapalıyken alıntıları da gizle
   fileCitations: false
-
-# ——— Model görünümleri (label) ———
-# Bu blok, 'orionmist' ve 'lithiumflow' için görünen adları tanımlar.
-modelSpecs:
-  list:
-    - name: "gemini-3-flash-codefast"
-      label: "Gemini 3.0 Flash ?"
-      description: "Codefast üzerindeki 'orionmist' modeli için görünen ad."
-      preset:
-        endpoint: "Codefast"        # custom endpoint adınızla aynı olmalı
-        model: "orionmist"          # gerçek model ID
-        modelLabel: "Gemini 3.0 Flash ?"
-
-    - name: "gemini-3-pro-codefast"
-      label: "Gemini 3.0 Pro ?"
-      description: "Codefast üzerindeki 'lithiumflow' modeli için görünen ad."
-      preset:
-        endpoint: "Codefast"
-        model: "lithiumflow"
-        modelLabel: "Gemini 3.0 Pro ?"
