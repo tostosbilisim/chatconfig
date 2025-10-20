@@ -171,9 +171,7 @@ endpoints:
 "claude-opus-4-search",
 "claude-opus-4-1-search",
 "ppl-sonar-reasoning-pro-high",
-"diffbot-small-xl",
-"orionmist",
-"lithiumflow"
+"diffbot-small-xl"
         ] # Fallback modeller (çekme başarısız olursa)
       fetch: false                  # /v1/models endpoint'inden modelleri otomatik çeker
       titleConvo: true
@@ -199,14 +197,6 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false
       modelDisplayLabel: "Codefast Grok"
-
-modelSpecs:  # Bunu ekle, hepsi bu!
-  enforce: true
-  list:
-    - name: "orionmist"
-      label: "Gemini 3.0 Flash ?"  # Ekranda bu görünür, ID gizli
-    - name: "lithiumflow"
-      label: "Gemini 3.0 Pro ?"  # Bu da gizli ID, custom isim
 
 # ——— UI / Interface ayarları ———
 interface:
