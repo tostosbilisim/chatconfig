@@ -163,13 +163,13 @@ endpoints:
           "reve-v1",
           "grok-4-fast-search",
           "gemini-2.5-pro-grounding",
-          "pml-sonar-pro-high",
+          "ppl-sonar-pro-high",
           "o3-search",
           "grok-4-search",
           "gpt-5-search",
           "claude-opus-4-search",
           "claude-opus-4-1-search",
-          "pml-sonar-reasoning-pro-high",
+          "ppl-sonar-reasoning-pro-high",
           "diffbot-small-xl"
         ] # Fallback modeller (çekme başarısız olursa)
       fetch: false # /v1/models endpoint'inden modelleri otomatik çeker
