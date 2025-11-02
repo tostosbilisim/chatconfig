@@ -197,6 +197,22 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false
       modelDisplayLabel: "Codefast Grok"
+    - name: "Codefast Web"
+      apiKey: "user_provided"
+      baseURL: "https://api16.codefast.app/v1"
+      models:
+        default: [
+          "claude-sonnet-4.5",
+          "gpt-5",
+          "claude-opus-4.1"
+        ]
+      fetch: false
+      titleConvo: true
+      titleModel: "current_model"
+      summarize: false
+      summaryModel: "current_model"
+      forcePrompt: false
+      modelDisplayLabel: "Codefast Web"
 
 # ——— UI / Interface ayarları ———
 interface:
