@@ -8,6 +8,7 @@ endpoints:
       baseURL: "https://api13.codefast.app/v1"  # Gerçek base URL'nizi girin
       models:
         default: [
+        "gemini-3-pro",
               "gemini-2.5-pro",
     "gemini-2.5-pro-grounding-exp",
     "claude-opus-4-1-20250805-thinking-16k",
