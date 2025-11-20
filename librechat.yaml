@@ -237,8 +237,9 @@ endpoints:
       models:
         default: [
           "claude-sonnet-4.5",
-          "gpt-5",
-          "claude-opus-4.1"
+          "gpt-5.1",
+          "claude-opus-4.1",
+          "gemini-3-pro"
         ]
       fetch: false
       titleConvo: true
