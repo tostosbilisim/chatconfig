@@ -9,6 +9,7 @@ endpoints:
       models:
         default: [
         "gemini-3-pro",
+        "gemini-3-pro-image-preview (nano-banana-pro)",
               "gemini-2.5-pro",
     "gemini-2.5-pro-grounding-exp",
     "claude-opus-4-1-20250805-thinking-16k",
