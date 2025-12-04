@@ -236,11 +236,11 @@ endpoints:
       baseURL: "https://api3.codefast.app/v1"
       models:
         default: [
-          "claude-4-5-sonnet",
-          "claude-4.5-sonnet-think",
-          "gemini-3-pro",
-          "gpt-5.1",
-          "gpt-5-think"
+          "claude-4-5-sonnet-search",
+          "claude-4.5-sonnet-think-search",
+          "gemini-3-pro-search",
+          "gpt-5.1-search",
+          "gpt-5-think-search"
         ]
       fetch: false
       titleConvo: true
