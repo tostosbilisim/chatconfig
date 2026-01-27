@@ -267,6 +267,7 @@ endpoints:
       models:
         default: [
           "moonshotai/kimi-k2.5",
+          "deepseek-ai/deepseek-v3.2",
           "z-ai/glm4.7",
           "openai/gpt-oss-120b"
         ]
