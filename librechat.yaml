@@ -267,8 +267,12 @@ endpoints:
       baseURL: "https://api19.codefast.app/v1"
       models:
         default: [
-          "moonshotai/kimi-k2.5",
-          "deepseek-ai/deepseek-v3.2",
+              "qwen/qwen3.5-397b-a17b",
+    "z-ai/glm5",
+    "moonshotai/kimi-k2.5",
+    "minimaxai/minimax-m2.1",
+    "stepfun-ai/step-3.5-flash",
+    "deepseek-ai/deepseek-v3.2"
           "z-ai/glm4.7",
           "openai/gpt-oss-120b"
         ]
