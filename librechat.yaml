@@ -229,6 +229,8 @@ endpoints:
       baseURL: "https://api12.codefast.app/v1"
       models:
         default: [
+          "grok-4.20",
+          "grok-imagine-0.9",
           "grok-3-fast",
           "grok-4-fast",
           "grok-4-fast-expert",
