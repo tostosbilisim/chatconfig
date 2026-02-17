@@ -268,7 +268,6 @@ endpoints:
       models:
         default: [
           "qwen/qwen3.5-397b-a17b",
-          "qwen/qwen3.5-397b-a17b",
           "moonshotai/kimi-k2.5",
           "minimaxai/minimax-m2.1",
           "stepfun-ai/step-3.5-flash",
