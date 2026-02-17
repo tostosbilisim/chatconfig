@@ -230,7 +230,6 @@ endpoints:
       models:
         default: [
           "grok-4.20-beta",
-          "grok-imagine-1.0",
           "grok-3-fast",
           "grok-4-fast",
           "grok-4-fast-expert",
